@@ -2,6 +2,8 @@
 
 A robust system for analyzing market sentiment in news articles using AI and structured data validation.
 
+![image](https://github.com/user-attachments/assets/590ffeaa-ecc6-4322-a44e-25f1b211e95e)
+
 ## Features
 
 - **Company Identification**: Automatically detects publicly traded companies in news content
