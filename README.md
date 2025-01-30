@@ -17,7 +17,7 @@ A robust system for analyzing market sentiment in news articles using AI and str
 ## Installation
 
 ```bash
-pip install langchain-openai pydantic python-dotenv
+pip install -r requirements.txt
 ```
 
 ## Configuration
@@ -31,21 +31,7 @@ GEMINI_API_KEY = "your_api_key_here"
 ## Usage
 
 ```python
-from your_module_name import chain
-
-article = """[Insert news article text here]"""
-
-result = chain.invoke({
-    "article": article,
-    "current_date": "2024-01-01"
-})
-
-print(f"Analysis timestamp: {result.timestamp}")
-for stock in result.stocks:
-    print(f"Company: {stock.company_name}")
-    print(f"Sentiment: {stock.sentiment.value}")
-    print(f"Confidence: {stock.confidence:.0%}")
-    print(f"Justification: {stock.justification}\n")
+python run main.py
 ```
 
 ## Example Output
