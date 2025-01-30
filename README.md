@@ -2,7 +2,7 @@
 
 A robust system for analyzing market sentiment in news articles using AI and structured data validation.
 
-![image.png](attachment:image.png)
+![image](https://github.com/user-attachments/assets/590ffeaa-ecc6-4322-a44e-25f1b211e95e)
 
 ## Features
 
