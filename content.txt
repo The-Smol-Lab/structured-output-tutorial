@@ -1,24 +1,285 @@
-OpenAI Pleads That It Can’t Make Money Without Using Copyrighted Materials for Free
-Noor Al-Sibai3-4 minutes 1/9/2024
-"It would be impossible to train today’s leading AI models without using copyrighted materials."
-Please Sir
-OpenAI is begging the British Parliament to allow it to use copyrighted works because it's supposedly "impossible" for the company to train its artificial intelligence models — and continue growing its multi-billion-dollar business — without them.
+finance.yahoo.com /news/live/stock-market-today-nasdaq-sp-500-rise-dow-steadies-with-apple-earnings-in-the-wings-143104710.html
+Stock market today: Nasdaq, S&P 500 rise, Dow steadies with Apple earnings in the wings
+Karen Friar12-15 minutes 1/30/2025
+Updated Thu, January 30, 2025 at 10:15 PM GMT+7 2 min read
 
-As The Telegraph reports, the AI firm said in a filing submitted to a House of Lords subcommittee that using only content from the public domain would be insufficient to train the kind of large language models (LLMs) it's building, suggesting that the company must therefore be allowed to use copyrighted material.
+In This Article:
+US stocks rose on Thursday, with the Nasdaq and S&P 500 eyeing a comeback as investors digested megacap tech earnings and waited for Apple (AAPL) results for more clues on prospects for Big Tech.
 
-"Because copyright today covers virtually every sort of human expression — including blog posts, photographs, forum posts, scraps of software code, and government documents — it would be impossible to train today's leading AI models without using copyrighted materials," the company wrote in the evidence filing. "Limiting training data to public domain books and drawings created more than a century ago might yield an interesting experiment, but would not provide AI systems that meet the needs of today's citizens."
+The tech-heavy Nasdaq Composite (^IXIC) rose slightly, while S&P 500 (^GSPC) moved up 0.3%. The Dow Jones Industrial Average (^DJI) rose 0.2%, in the wake of a losing day on Wall Street.
 
-OpenAI went on to insist in the document, submitted before the House of Lords' communications and digital committee, that it complies with copyright laws and that the company believes "legally copyright law does not forbid training."
+After the Federal Reserve stood pat on interest rates as expected, investors have turned to parsing earnings reports — and in particular, the first wave of results from the "Magnificent Seven" companies that have driven broader stock market gains.
 
-Rank and File
-There's a growing chorus of interested parties who strongly disagree with OpenAI's assertion that it's chill and legal to use copyrighted work to train AI.
+Markets appeared to be keeping faith with Big Tech following results from Microsoft (MSFT), Meta (META), and Tesla (TSLA) late Wednesday. Eyes were on their rationale for massive AI investments after DeepSeek's cheaper AI model rattled assumptions about the likelihood of a payoff.
 
-Just a few weeks ago, the New York Times sued OpenAI and Microsoft, its biggest investor, for profiting from allegedly "massive copyright infringement, commercial exploitation and misappropriation" of the paper's intellectual property.
+DJI - Free Realtime Quote USD
 
-The paper of record is far from alone in its legal overtures against OpenAI. A few months prior, the Authors Guild sued the firm on behalf of some of the biggest names in fiction — including John Grisham, Jodi Picoult, Jonathan Franzen, David Baldacci, and George R.R. Martin — over objections to those writers' work being used to train ChatGPT.
+44,831.11
 
-Without using copyrighted work, OpenAI "would have a vastly different commercial product," Rachel Geman, one of the attorneys in the guild's class action suit, said in a press release about the filing. As such, the company's "decision to copy authors' works, done without offering any choices or providing any compensation, threatens the role and livelihood of writers as a whole."
++117.59
 
-On OpenAI's end, the company claims that it's seeking to broker new publisher partnerships, The Telegraph reports. All the same, it's hard to imagine every newspaper, website, or publishing house accepting such terms wholesale, much less independent writers who rely on their copyrights to make a living.
++(0.26%)
 
-More on authors and AI: AI Companies Desperately Hiring Authors and Poets to Fix Their Crappy Writing
+As of 10:24:07 AM EST. Market Open.
+
+^DJI ^IXIC ^GSPC
+
+Tesla shares popped despite an earnings miss as investors took on trust its vow to return to growth in 2025. Meanwhile, Meta's quarterly earnings beat helped lift shares in pre-market, but Microsoft stock slid after its cloud revenue fell short.
+
+Next up is Apple (AAPL), whose stock has been hit by multiple downgrades. Investors will scrutinize its quarterly report after the bell for signs its iPhone sales are doing better than feared. Chipmaker Intel (INTC), Comcast (CMCSA), Mastercard (MA), and Visa (V) are also on the docket.
+
+The Bureau of Economic Analysis's advance estimate of fourth-quarter gross domestic product (GDP) showed the US economy grew at an annualized pace of 2.3%, below the 2.6% expected by economists surveyed by Bloomberg.
+
+Meanwhile, a fatal collision between an American Airlines (AAL) passenger jet and a US army helicopter dominated headlines. The crash happened in midair as the plane approached Reagan Washington National Airport on Wednesday night.
+
+LIVE 11 updates
+
+Ines Ferré
+
+13 mins ago
+
+Oracle debuts new AI agents as artificial intelligence war enters next battle
+Yahoo Finance's Dan Howley reports:
+
+Oracle (ORCL), fresh off of announcing its part in the massive Stargate Project alongside OpenAI and SoftBank (SFTBY), debuted its latest AI agents aimed at manufacturers during its CloudWorld event in Austin on Thursday.
+
+The agents are designed to help supply-chain workers across a host of jobs, ranging from procurement to sustainability. AI agents are specialized AI bots that can take actions on a user’s behalf — either autonomously, or with their oversight — across multiple apps.
+
+Companies ranging from Microsoft (MSFT) and Google (GOOG, GOOGL) to Amazon (AMZN) and Nvidia (NVDA) are pushing AI agents as the next major step in AI evolution, thanks to their ability to help streamline mundane but time-consuming tasks.
+
+Read more here.
+
+NYSE - Nasdaq Real Time Price USD
+
+170.27
+
++8.25
+
++(5.09%)
+
+As of 10:24:07 AM EST. Market Open.
+
+Ines Ferré
+
+43 mins ago
+
+American Airlines CEO ‘absolutely heartbroken’ after fatal DC crash
+Yahoo Finance's Laura Bratton reports:
+
+American Airlines (AAL) CEO Robert Isom on Thursday morning expressed his condolences after a crash involving 64 passengers and crew, with no survivors expected.
+
+A plane operated by American's subsidiary PSA Airlines collided with a military helicopter on Wednesday night as it approached Reagan Washington National Airport.
+
+”We're absolutely heartbroken for the family and loved ones of the passengers and crew members and also for those that were on the military aircraft,” Isom said during a press briefing with reporters.
+
+The flight was traveling from Wichita, Kansas to DCA when it collided with a US Army Black Hawk helicopter carrying three soldiers on a training mission, media reports said.
+
+Read more here.
+
+Ines Ferré
+
+51 mins ago
+
+Stocks mixed as investors digest Big Tech earnings
+US stocks were mixed at the open on Thursday as investors digested earnings from Microsoft (MSFT), Meta (META), and Tesla (TSLA).
+
+The Nasdaq Composite (^IXIC) rose 0.3%, while S&P 500 (^GSPC) gained 0.3%. The Dow Jones Industrial Average (^DJI) traded just below the flatline.
+
+Stocks were attempting to climb back after the Federal Reserve stood unchanged on interest rates, indicating cautiousness around the topic of inflation.
+
+Microsoft shares declined more than 5% on Thursday following its quarterly results. Social media platform Meta and EV giant Tesla both gained. Apple (AAPL) results are expected after the bell.
+
+NasdaqGS - Nasdaq Real Time Price USD
+
+703.23
+
++26.74
+
++(3.91%)
+
+As of 10:24:08 AM EST. Market Open.
+
+META TSLA MSFT
+
+ Josh Schafer
+
+Today at 8:44 PM GMT+7
+
+GDP: US economy grows at slower-than-expected pace in fourth quarter
+The US economy grew at a slower-than-expected pace in the fourth quarter, preliminary figures showed.
+
+The Bureau of Economic Analysis's advance estimate of US gross domestic product (GDP) in the fourth quarter showed the economy grew at an annualized pace of 2.3%, below the 2.6% expected by economists surveyed by Bloomberg. The reading compares with the 3.1% seen in the third quarter.
+
+Increases in consumer and government spending drove economic growth in the quarter, while decreases in investment offset some gains. For the year, the US economy grew at 2.8% pace, slightly below the 2.9% seen in 2023 but above the 2.5% growth seen in 2022.
+
+Jenny McCall
+
+Today at 8:36 PM GMT+7
+
+Good morning. Here's what's happening today.
+Economic data: Fourth quarter GDP (first estimate); personal consumption (fourth quarter advance estimate); initial jobless claims (to Jan. 25)
+
+Earnings: Apple (AAPL), Blackstone (BX), Caterpillar (CAT), Comcast (CMCSA), Dow (DOW), Deckers Outdoors (DECK), Intel (INTC), Mastercard (MA), Mobileye (MBLY), Southwest Airlines (LUV), UPS (UPS), United States Steel (X), Visa (V)
+
+Here are some of the biggest stories you may have missed overnight and early this morning:
+
+American Airlines jet collides with helicopter in midair near DCA
+
+YF columnist Rick Newman: In Trump's economic vision, everybody's on their own
+
+Tesla stock rises despite miss, amid vow to return to growth
+
+UPS stock sinks as revenue outlook falls short
+
+Powell holds interest rates — and his ground
+
+Microsoft, Meta defend AI spend in DeepSeek fallout
+
+European Central Bank cuts interest rates by 0.25% as expected
+
+Brian Sozzi
+
+Today at 5:46 PM GMT+7
+
+The new battle for Tesla investors
+Tesla's (TSLA) quarter wasn't great.
+
+Margins missed estimates. Sales came in light. And CEO Elon Musk was back to his antics on the earnings call, conveying guidance that by his own admission is "insane."
+
+Investors now have a choice to make on Tesla.
+
+Do you avoid the stock because it's a disruptive EV company that may underwhelm in the near term as it invests in its business? Plus, Elon could fall out of favor with President Trump?
+
+Or do you buy the stock because the company will likely have driver-less cars on the road in 2026, alongside humanoid robots in factories?
+
+NasdaqGS - Nasdaq Real Time Price USD
+
+394.40
+
++5.30
+
++(1.41%)
+
+As of 10:24:08 AM EST. Market Open.
+
+I don't have the answer for you. But RBC analyst Tom Narayan makes a host of good points on how his clients are viewing the stock:
+
+"Moonshots getting real. Tesla announced that it will have a paid unsupervised full-self driving (FSD) service in Austin this June. We expect this to be an end- to-end fleet service similar to Waymo (except will use a Tesla vehicle). We expect the car to have pedals and steering wheels and not be a cybercab. The release announced Tesla will have unsupervised FSD for its own customers as well as the robotaxi business in parts of this year. Management also indicated that there is interest from a number of major car companies to license FSD technology but would only entertain orders if volumes are high. Regarding supervised FSD, the company says it is working to launch in Europe and China this year. Regarding Optimus, Tesla now thinks it will make several thousand this year and will utilize some at company facilities. Next year once it produces version 2, it can do 10K per month as opposed to 1K per month."
+
+Brian Sozzi
+
+Today at 5:35 PM GMT+7
+
+Why Levi's is getting pounded
+Levi's (LEVI) was having a relatively good earnings call last night.
+
+Considering how challenging retail was for the holidays (if your name isn't Walmart (WMT)), to see organic sales for the Levi's brand up 8.2% is win for that team.
+
+But Levi's 2025 EPS guidance of $1.20 to $1.25 was a country mile away from consensus for $1.38 a share.
+
+NYSE - Nasdaq Real Time Price USD
+
+17.46
+
+-0.63
+
+(-3.48%)
+
+As of 10:23:52 AM EST. Market Open.
+
+While the blame is going to foreign-exchange fluctuations, I think there is a large chunk that reflects what's happening at department stores. Macy's (M)s continues to shut a ton of stores, and it's not alone in doing so post-holidays.
+
+If these stores are closing, Levi's loses places to sell its wares. Management has often told me they are doing big business in their own stores and online. But the unwinding of the department store space is a structural problem.
+
+More on that here in my chat at the World Economic Forum with Ralph Lauren's (RL) CEO Patrice Louvet.
+
+Brian Sozzi
+
+Today at 5:24 PM GMT+7
+
+Goldman's still in a rate-cut mindset
+The Fed may have stood pat on rates Wednesday, but Goldman Sachs still sees a world where rate cuts happen in 2025.
+
+Goldman's chief economist Jan Hatzius said in a new note:
+
+"In light of today’s message, we remain comfortable with our standing forecast that the FOMC will deliver two more 25bp cuts in June and December this year, and one more in 2026. Over the course of the next few FOMC meetings, we expect year-on-year core PCE inflation to fall meaningfully and in a way that “builds [the] confidence” that Powell said he wanted to see."
+
+Brian Sozzi
+
+Today at 5:21 PM GMT+7
+
+The Nvidia bulls remain out there
+Nvidia (NVDA) isn't having a good week.
+
+The combination of the surprising DeepSeek news and fears of the Trump administration further cracking down on chip flow has the stock down 13% on the week.
+
+Interestingly, that hasn't stopped the Nvidia bulls from buying the dip.
+
+New data out of Vanda Research shows individual investors bought $562.2 million of Nvidia shares on Monday's rout. Self-directed traders bought $359.7 million of the stock on Tuesday.
+
+NasdaqGS - Nasdaq Real Time Price USD
+
+120.75
+
+-2.95
+
+(-2.48%)
+
+As of 10:24:08 AM EST. Market Open.
+
+Brian Sozzi
+
+Today at 5:11 PM GMT+7
+
+What really matters to Meta bulls
+I certainly appreciate everyone racing to read Meta's (META) cash flow statement to see how much it's spending on capital expenditures, mostly related to AI infrastructure build-outs.
+
+But the reality is all that matters to the Meta investment thesis — for now — is that the company is taking its new AI and applying it to sucking in more ad dollars. Meta remains an advertising-led business, full stop.
+
+To that end, Mark Zuckerberg made an important point on this on the earnings call last night:
+
+"This year, the improvements of the business are going to be taking the AI methods and applying them to advertising and recommendations and feeds and things like that. So the actual business opportunity — for Meta AI, and AI studio and business agents, and people interacting with these AIs — remains outside of 2025, for the most part," Zuckerberg said.
+
+Pivotal Research analyst Jeff Wlodarczak said: "In the end, we see a strong revenue growth outlook from increased usage/new products/better targeting/higher prices."
+
+Sounds right to me.
+
+NasdaqGS - Nasdaq Real Time Price USD
+
+703.23
+
++26.74
+
++(3.91%)
+
+As of 10:24:08 AM EST. Market Open.
+
+Brian Sozzi
+
+Today at 5:02 PM GMT+7
+
+Meh earnings call for Microsoft
+I was going to say something more uplifting on Microsoft’s (MSFT) results, which at first glance don’t warrant the pre-market sell-off. AI services sales surged 157%, supporting the yearslong narrative on the stock.
+
+But the Street has a point: That Azure growth was under-whelming and may not reaccelerate in the back half of the year.
+
+“The issue was in Azure where management attributed new sales execution issues on non-AI services which saw underwhelming consumption in fiscal second quarter and a weaker outlook, where a second half re-acceleration is more uncertain. The results are indeed a setback to the second half Azure acceleration thesis,” Citi analyst Tyler Radke said.
+
+Then Microsoft slipped this into its earnings call, which I don’t think is getting the attention it deserves:
+
+“And while we expect to be AI capacity-constrained in Q3, by the end of FY'25, we should be roughly in line with near-term demand given our significant capital investments,” Microsoft CFO Amy Hood said.
+
+To me, it signals a potential slowing in the AI story in the back half of the year.
+
+So not much up-lifting to say here, after all. The stock probably warrants the spanking.
+
+NasdaqGS - Nasdaq Real Time Price USD
+
+415.09
+
+-27.24
+
+(-6.16%)
+
+As of 10:24:08 AM EST. Market Open.
+
