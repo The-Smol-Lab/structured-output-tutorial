@@ -46,10 +46,10 @@ Analysis timestamp: 2024-01-09T15:34:56.789012
 Time taken to process the article: 2.45 seconds
 
 **************************************************
-Company: OpenAI
-Sentiment: negative
+Company: Meta
+Sentiment: positive
 Confidence: 85%
-Justification: Facing multiple copyright lawsuits from NY Times and authors, potentially threatening business model
+Justification: Recent reports highlight Meta's significant advancements and investments in artificial intelligence (AI). The company plans to invest hundreds of billions over the long term in AI infrastructure, aiming to make Meta AI accessible to over a billion users by 2025.....
 ```
 
 ## Model Support
