@@ -6,6 +6,7 @@ from enum import Enum
 from datetime import datetime
 import time
 from config import GEMINI_API_KEY
+from loader import Loader  # Import the Loader class
 
 class SentimentLabel(str, Enum):
     POSITIVE = "positive"
@@ -121,7 +122,8 @@ Maintain strict requirements:
 
 user_prompt = """Analyze this news article dated {current_date}:
 
-{article}"""
+{article}
+"""
 
 prompt = ChatPromptTemplate.from_messages([
     ("system", system_prompt),
@@ -131,7 +133,7 @@ prompt = ChatPromptTemplate.from_messages([
 # Create processing chain
 chain = prompt | structured_llm
 
-with open('content.txt', 'r') as file:
+with open('content.txt', 'r', encoding='utf-8') as file:
     article = file.read()
 
 # Update example usage with current date
@@ -140,8 +142,9 @@ current_date = datetime.now().strftime("%Y-%m-%d")
 # Start the timer
 start_time = time.time()
 
-print('Processing article...\n')
-result = chain.invoke({"article": article, "current_date": current_date})
+with Loader("Processing article..."):
+    # Replace this line with your actual code
+    result = chain.invoke({"article": article, "current_date": current_date})
 
 # Calculate the elapsed time
 elapsed_time = time.time() - start_time
