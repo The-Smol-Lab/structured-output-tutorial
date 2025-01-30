@@ -8,27 +8,16 @@ import time
 
 class SentimentLabel(str, Enum):
     POSITIVE = "positive"
-    MIXED = "mixed"
+    NEUTRAL = "neutral"
     NEGATIVE = "negative"
+    MIXED = "mixed"
 
 class StockSentiment(BaseModel):
-    company_name: str = Field(
-        ..., 
-        description="The name of the company being analyzed, e.g., NVIDIA Corporation (NVDA)."
-    )
-    justification: str = Field(
-        ..., 
-        description="Detailed explanation with specific numbers from the article, supporting the sentiment classification."
-    )
-    sentiment: SentimentLabel = Field(
-        ..., 
-        description="Sentiment classification based on the content analysis: positive, neutral, negative, or mixed."
-    )
-    confidence: float = Field(
-        ..., 
-        description="Confidence level of the sentiment analysis, ranging from 0 to 1."
-    )
-
+    company_name: str = Field(..., description="The name of the company", example="NVIDIA Corporation (NVDA)")
+    sentiment: SentimentLabel = Field(..., description="either positive, neutral, negative, or mixed", example="positive")
+    confidence: float = Field(..., description="confidence level of the sentiment analysis between 0 and 1", example=0.95)
+    justification: str = Field(..., description="justification with specific numbers from article")  # Changed from Optional to required
+    
     @field_validator("company_name")
     def validate_company_name(cls, v):
         if not v.strip():
@@ -80,14 +69,12 @@ class NewsSentiment(BaseModel):
             raise ValueError("Stocks list cannot be empty")
         return v
 
-model_name = "deepseek-r1-distill-qwen-32b@iq2_s"
-
 # Initialize Chat model
 model = ChatOpenAI(
-    model_name=model_name,
+    model_name="fuseo1-deepseekr1-qwen2.5-coder-32b-preview-v0.1",
     openai_api_base="http://localhost:1234/v1",
     openai_api_key="lm-studio",
-    temperature=0 # Set temperature to 0 for deterministic output
+    temperature=0.3
 )
 
 # Add structured output capability
@@ -132,30 +119,33 @@ chain = prompt | structured_llm
 # Example usage
 article = """
 
-OpenAI Pleads That It Can’t Make Money Without Using Copyrighted Materials for Free
-Noor Al-Sibai3-4 minutes 1/9/2024
-"It would be impossible to train today’s leading AI models without using copyrighted materials."
-Please Sir
-OpenAI is begging the British Parliament to allow it to use copyrighted works because it's supposedly "impossible" for the company to train its artificial intelligence models — and continue growing its multi-billion-dollar business — without them.
+TMBThanachart Bank Public Company Limited (SET: TTB) has announced a share repurchase program for 2025-2027 with a total
+budget of 21 billion baht. In the rst round in 2025, TTB will repurchase no more than 3.5 billion shares (equivalent to 3.6% of total
+outstanding shares) with a total budget of no more than 7 billion
+baht.
+This announcement implies an average price of THB2.00 per share,
+which is 4.7% higher than the closing price of TTB on Tuesday at
+THB1.91 per share. The program will start from February 3 to August
+1.
+The share repurchase is common in the market, however, the magnitude of the purchasing power from TTB is far exceeding other commercial banks that had done the same program in the past. In 2020,
+Kasikornbank Public Company Limited (SET: KBANK) announced a
+share repurchase program that accounted to 1% of its total outstanding shares, while Kiatnakin Phatra Bank Public Company Limited
+(SET: KKP) had also done the same last year for a total of 2.6% of its
+total outstanding shares.
+According to Kiatnakin Phatra Securities, this is a positive momentum
+for TTB’s share price, and it can enable TTB’s 2025 RoE to improve
+by roughly 13 bps to 8.6% in 2025, while the CET-1 ratio will remain
+around 17%.
+Additionally, the Board of Directors of TTB also resolved to approve
+the 2025 Employee Joint Investment Program (EJIP2025) to serve as
+1/30/25, 8:53 AM TTB Announces Aggressive THB21 Billion Share Buyback with EJIP Program up to 750% Returns - KAOHOON INTERNATIONAL
+https://www.kaohooninternational.com/markets/551564 2/4
+a long-term incentive for employees which builds a sense of ownership in the organization, an employee retention tool, as well as an alternative to traditional compensation options.
+The program is also not intended to allow directors or executives to
+interfere with the investment. Moreover, TTB stated that the bank
+will contribute 100%-750% of participating employee’s contributions
+with a total budget of 841 million baht.
 
-As The Telegraph reports, the AI firm said in a filing submitted to a House of Lords subcommittee that using only content from the public domain would be insufficient to train the kind of large language models (LLMs) it's building, suggesting that the company must therefore be allowed to use copyrighted material.
-
-"Because copyright today covers virtually every sort of human expression — including blog posts, photographs, forum posts, scraps of software code, and government documents — it would be impossible to train today's leading AI models without using copyrighted materials," the company wrote in the evidence filing. "Limiting training data to public domain books and drawings created more than a century ago might yield an interesting experiment, but would not provide AI systems that meet the needs of today's citizens."
-
-OpenAI went on to insist in the document, submitted before the House of Lords' communications and digital committee, that it complies with copyright laws and that the company believes "legally copyright law does not forbid training."
-
-Rank and File
-There's a growing chorus of interested parties who strongly disagree with OpenAI's assertion that it's chill and legal to use copyrighted work to train AI.
-
-Just a few weeks ago, the New York Times sued OpenAI and Microsoft, its biggest investor, for profiting from allegedly "massive copyright infringement, commercial exploitation and misappropriation" of the paper's intellectual property.
-
-The paper of record is far from alone in its legal overtures against OpenAI. A few months prior, the Authors Guild sued the firm on behalf of some of the biggest names in fiction — including John Grisham, Jodi Picoult, Jonathan Franzen, David Baldacci, and George R.R. Martin — over objections to those writers' work being used to train ChatGPT.
-
-Without using copyrighted work, OpenAI "would have a vastly different commercial product," Rachel Geman, one of the attorneys in the guild's class action suit, said in a press release about the filing. As such, the company's "decision to copy authors' works, done without offering any choices or providing any compensation, threatens the role and livelihood of writers as a whole."
-
-On OpenAI's end, the company claims that it's seeking to broker new publisher partnerships, The Telegraph reports. All the same, it's hard to imagine every newspaper, website, or publishing house accepting such terms wholesale, much less independent writers who rely on their copyrights to make a living.
-
-More on authors and AI: AI Companies Desperately Hiring Authors and Poets to Fix Their Crappy Writing
 
 """
 
@@ -165,23 +155,19 @@ current_date = datetime.now().strftime("%Y-%m-%d")
 # Start the timer
 start_time = time.time()
 
-print('Processing article...\n')
+print('Processing article...')
 result = chain.invoke({"article": article, "current_date": current_date})
 
 # Calculate the elapsed time
 elapsed_time = time.time() - start_time
 
-print(f"Model Used: {model_name}")
 print(f"Analysis timestamp: {result.timestamp}")
 print(f"Time taken to process the article: {elapsed_time:.2f} seconds")
 
 for stock in result.stocks:
-    print("**************************************************")
     print(f"Company: {stock.company_name}")
     print(f"Sentiment: {stock.sentiment.value}")
     print(f"Confidence: {stock.confidence:.0%}")  # Format as percentage
     print(f"Justification: {stock.justification}\n")
-    
-
 
 
