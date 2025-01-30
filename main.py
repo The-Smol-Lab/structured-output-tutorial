@@ -5,6 +5,7 @@ from typing import List, Optional
 from enum import Enum
 from datetime import datetime
 import time
+from config import GEMINI_API_KEY
 
 class SentimentLabel(str, Enum):
     POSITIVE = "positive"
@@ -80,13 +81,14 @@ class NewsSentiment(BaseModel):
             raise ValueError("Stocks list cannot be empty")
         return v
 
-model_name = "deepseek-r1-distill-qwen-32b@iq2_s"
+# model_name = "deepseek-r1-distill-qwen-32b@iq2_s"
+model_name = "gemini-2.0-flash-exp"
 
 # Initialize Chat model
 model = ChatOpenAI(
     model_name=model_name,
-    openai_api_base="http://localhost:1234/v1",
-    openai_api_key="lm-studio",
+    openai_api_base="https://generativelanguage.googleapis.com/v1beta/openai/", #lmstudio: http://localhost:1234/v1
+    openai_api_key=GEMINI_API_KEY,
     temperature=0 # Set temperature to 0 for deterministic output
 )
 
