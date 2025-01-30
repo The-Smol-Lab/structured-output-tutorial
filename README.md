@@ -82,14 +82,3 @@ Currently compatible with:
 
 MIT License - See [LICENSE](LICENSE) for details
 ```
-
-This README features:
-- Clear structure with logical sections
-- Code blocks with syntax highlighting
-- Table formatting for validation rules
-- Concise feature overview
-- Easy-to-follow setup instructions
-- Real-world example output
-- License information
-
-Would you like me to modify any particular section or add additional information?
