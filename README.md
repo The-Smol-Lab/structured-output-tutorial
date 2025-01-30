@@ -51,9 +51,8 @@ Justification: Recent reports highlight Meta's significant advancements and inve
 ## Model Support
 
 Currently compatible with:
-- Gemini 1.5 Flash/Pro (`gemini-2.0-flash-exp`)
-- Any OpenAI-compatible API endpoint
-- Local models via LM Studio
+- All Gemini Models (e.g., `gemini-2.0-flash-exp`)
+- Any OpenAI-compatible API endpoint including Ollama/LM Studio
 
 ## License
 
