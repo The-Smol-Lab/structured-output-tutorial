@@ -19,6 +19,7 @@ A robust system for analyzing market sentiment in news articles using AI and str
 ## Installation
 
 ```bash
+git clone git+https://github.com/krittaprot/structured-output-tutorial.git
 pip install -r requirements.txt
 ```
 
