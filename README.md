@@ -9,11 +9,7 @@ A robust system for analyzing market sentiment in news articles using AI and str
 - **Company Identification**: Automatically detects publicly traded companies in news content
 - **Sentiment Classification**: Categorizes sentiment as Positive, Negative, or Mixed
 - **Confidence Scoring**: Provides numerical confidence levels (0-1) for each analysis
-- **Data Validation**: Ensures:
-  - Valid company names with ticker symbols
-  - Confidence scores within proper ranges
-  - Exact numerical references in justifications
-  - ISO-8601 timestamps
+- ** Sentiment Justification**: Provides explanation of how the AI came up with the sentiment label based on your provided content.
 - **Structured Output**: Returns validated JSON data with Pydantic models
 
 ## Installation
