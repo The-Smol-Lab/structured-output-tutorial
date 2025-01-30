@@ -59,15 +59,6 @@ Currently compatible with:
 - Any OpenAI-compatible API endpoint
 - Local models via LM Studio
 
-## Validation Rules
-
-| Field          | Validation Criteria                     |
-|----------------|-----------------------------------------|
-| Company Name   | Non-empty, ≤100 characters              |
-| Confidence     | 0-1 range, rounded to 2 decimals        |
-| Justification  | Requires exact numbers, no approximations |
-| Timestamp      | Auto-generated ISO-8601 format          |
-
 ## License
 
 MIT License - See [LICENSE](LICENSE) for details
