@@ -81,4 +81,3 @@ Currently compatible with:
 ## License
 
 MIT License - See [LICENSE](LICENSE) for details
-```
