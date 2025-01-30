@@ -6,7 +6,7 @@ from time import sleep
 #Credit: https://stackoverflow.com/questions/22029562/python-how-to-make-simple-animated-loading-while-process-is-running
 
 class Loader:
-    def __init__(self, desc="Loading...", end="Done!\n", timeout=0.1):
+    def __init__(self, desc="Loading...", end="Done!", timeout=0.1):
         """
         A loader-like context manager
 

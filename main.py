@@ -145,6 +145,7 @@ start_time = time.time()
 with Loader("Processing article..."):
     # Replace this line with your actual code
     result = chain.invoke({"article": article, "current_date": current_date})
+print()
 
 # Calculate the elapsed time
 elapsed_time = time.time() - start_time
