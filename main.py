@@ -131,35 +131,8 @@ prompt = ChatPromptTemplate.from_messages([
 # Create processing chain
 chain = prompt | structured_llm
 
-# Example usage
-article = """
-
-OpenAI Pleads That It Can’t Make Money Without Using Copyrighted Materials for Free
-Noor Al-Sibai3-4 minutes 1/9/2024
-"It would be impossible to train today’s leading AI models without using copyrighted materials."
-Please Sir
-OpenAI is begging the British Parliament to allow it to use copyrighted works because it's supposedly "impossible" for the company to train its artificial intelligence models — and continue growing its multi-billion-dollar business — without them.
-
-As The Telegraph reports, the AI firm said in a filing submitted to a House of Lords subcommittee that using only content from the public domain would be insufficient to train the kind of large language models (LLMs) it's building, suggesting that the company must therefore be allowed to use copyrighted material.
-
-"Because copyright today covers virtually every sort of human expression — including blog posts, photographs, forum posts, scraps of software code, and government documents — it would be impossible to train today's leading AI models without using copyrighted materials," the company wrote in the evidence filing. "Limiting training data to public domain books and drawings created more than a century ago might yield an interesting experiment, but would not provide AI systems that meet the needs of today's citizens."
-
-OpenAI went on to insist in the document, submitted before the House of Lords' communications and digital committee, that it complies with copyright laws and that the company believes "legally copyright law does not forbid training."
-
-Rank and File
-There's a growing chorus of interested parties who strongly disagree with OpenAI's assertion that it's chill and legal to use copyrighted work to train AI.
-
-Just a few weeks ago, the New York Times sued OpenAI and Microsoft, its biggest investor, for profiting from allegedly "massive copyright infringement, commercial exploitation and misappropriation" of the paper's intellectual property.
-
-The paper of record is far from alone in its legal overtures against OpenAI. A few months prior, the Authors Guild sued the firm on behalf of some of the biggest names in fiction — including John Grisham, Jodi Picoult, Jonathan Franzen, David Baldacci, and George R.R. Martin — over objections to those writers' work being used to train ChatGPT.
-
-Without using copyrighted work, OpenAI "would have a vastly different commercial product," Rachel Geman, one of the attorneys in the guild's class action suit, said in a press release about the filing. As such, the company's "decision to copy authors' works, done without offering any choices or providing any compensation, threatens the role and livelihood of writers as a whole."
-
-On OpenAI's end, the company claims that it's seeking to broker new publisher partnerships, The Telegraph reports. All the same, it's hard to imagine every newspaper, website, or publishing house accepting such terms wholesale, much less independent writers who rely on their copyrights to make a living.
-
-More on authors and AI: AI Companies Desperately Hiring Authors and Poets to Fix Their Crappy Writing
-
-"""
+with open('content.txt', 'r') as file:
+    article = file.read()
 
 # Update example usage with current date
 current_date = datetime.now().strftime("%Y-%m-%d")
