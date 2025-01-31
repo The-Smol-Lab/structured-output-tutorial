@@ -1,185 +1,194 @@
-from langchain_openai import ChatOpenAI
-from langchain.prompts import ChatPromptTemplate
-from pydantic import BaseModel, Field, field_validator
-from typing import List, Optional
-from enum import Enum
-from datetime import datetime
 import time
+from datetime import datetime
+from enum import Enum
+from typing import List
+
+from langchain.prompts import ChatPromptTemplate
+from langchain_openai import ChatOpenAI
+from pydantic import BaseModel, Field, field_validator
+
 from config import GEMINI_API_KEY
-from loader import Loader  # Import the Loader class
+from loader import Loader
+
+import argparse
+
+MODEL_CONFIGS = {
+    'lmstudio': {
+        'openai_api_base': "http://localhost:1234/v1",
+        'openai_api_key': "lm-studio",
+        'model_name': "deepseek-r1-distill-qwen-32b@iq2_s"
+    },
+    'ollama': {
+        'openai_api_base': "http://localhost:11434/v1",
+        'openai_api_key': "ollama",
+        'model_name': "deepseek-r1:14b"
+    },
+    'gemini': {
+        'openai_api_base': "https://generativelanguage.googleapis.com/v1beta/openai/",
+        'openai_api_key': GEMINI_API_KEY,
+        'model_name': "gemini-2.0-flash-exp"
+    }
+}
 
 class SentimentLabel(str, Enum):
     POSITIVE = "positive"
     MIXED = "mixed"
     NEGATIVE = "negative"
 
+
 class StockSentiment(BaseModel):
     company_name: str = Field(
         ..., 
-        description="The name of the company being analyzed, e.g., NVIDIA Corporation (NVDA)."
+        description="Company name with ticker symbol, e.g., NVIDIA Corporation (NVDA)"
     )
     justification: str = Field(
         ..., 
-        description="Detailed explanation with specific numbers from the article, supporting the sentiment classification."
+        description="Detailed explanation with specific numbers from the article"
     )
     sentiment: SentimentLabel = Field(
         ..., 
-        description="Sentiment classification based on the content analysis: positive, neutral, negative, or mixed."
+        description="Sentiment classification based on content analysis"
     )
     confidence: float = Field(
         ..., 
-        description="Confidence level of the sentiment analysis, ranging from 0 to 1."
+        description="Confidence level between 0 and 1", 
+        ge=0, 
+        le=1
     )
 
     @field_validator("company_name")
-    def validate_company_name(cls, v):
+    def validate_company_name(cls, v: str) -> str:
         if not v.strip():
             raise ValueError("Company name cannot be empty")
         if len(v) > 100:
-            raise ValueError("Company name must be 100 characters or fewer")
+            raise ValueError("Company name must be ≤ 100 characters")
         return v
 
     @field_validator("confidence")
-    def validate_confidence(cls, v):
-        if not 0 <= v <= 1:
-            raise ValueError("Confidence must be between 0 and 1")
-        return round(v, 2)  # Round to 2 decimal places for cleaner output
+    def validate_confidence(cls, v: float) -> float:
+        return round(v, 2)
 
     @field_validator("justification")
-    def validate_justification(cls, v):
+    def validate_justification(cls, v: str) -> str:
         if not v.strip():
             raise ValueError("Justification cannot be empty")
-        if "±" in v or "≈" in v:  # Prevent approximations
-            raise ValueError("Use exact numbers from article, not approximations")
+        if any(char in v for char in ("±", "≈")):
+            raise ValueError("Use exact numbers from article")
         return v
+
 
 class NewsSentiment(BaseModel):
     stocks: List[StockSentiment] = Field(
-            ...,
-            example=[
-                {
-                    "company_name": "NVIDIA Corporation (NVDA)", 
-                    "sentiment": "positive", 
-                    "confidence": 0.95, 
-                    "justification": "Q4 revenue increased 15% to $22.1 billion driven by AI chip demand"
-                },
-                {
-                    "company_name": "Tesla, Inc. (TSLA)", 
-                    "sentiment": "negative", 
-                    "confidence": 0.85, 
-                    "justification": "Vehicle deliveries dropped 8.5% to 435,000 units in Q3"
-                }
-            ]
-        )
+        ...,
+        examples=[[{
+            "company_name": "NVIDIA Corporation (NVDA)",
+            "sentiment": "positive",
+            "confidence": 0.95,
+            "justification": "Q4 revenue increased 15% to $22.1B driven by AI chips"
+        }]]
+    )
     timestamp: datetime = Field(
         default_factory=datetime.now,
-        description="Timestamp of the analysis in ISO format"
+        description="Analysis timestamp in ISO format"
     )
 
     @field_validator("stocks")
-    def validate_stocks(cls, v):
+    def validate_stocks(cls, v: List[StockSentiment]) -> List[StockSentiment]:
         if not v:
-            raise ValueError("Stocks list cannot be empty")
+            raise ValueError("At least one stock required")
         return v
 
-# Initialize Chat model, choose the mode, between 'gemini', 'lmstudio' and 'ollama'
-mode = 'gemini'
 
-if mode == 'lmstudio':
-    openai_api_base = "http://localhost:1234/v1"
-    openai_api_key = "lm-studio"
-    model_name = "mistral-small-24b-instruct-2501"
-    #bartowski/deepseek-r1-distill-qwen-14b
-    #deepseek-r1-redistill-qwen-1.5b-v1.0
-    #bartowski/deepseek-r1-distill-qwen-14b
-    #bartowski/deepseek-r1-distill-qwen-32b@iq2_s
-    #llama-3.1-tulu-3-8b
-    #selene-1-mini-llama-3.1-8b
-    #unsloth/phi-4
-elif mode == 'ollama':
-    openai_api_base = "http://localhost:11434/v1"
-    openai_api_key = "ollama"
-    model_name = "deepseek-r1:14b"
-elif mode == 'gemini':
-    openai_api_base="https://generativelanguage.googleapis.com/v1beta/openai/"
-    openai_api_key = GEMINI_API_KEY
-    model_name = "gemini-2.0-flash-exp"
+def main() -> None:
+    # Set up argument parsing
+    parser = argparse.ArgumentParser(description="Run news sentiment analysis with a specified mode and model.")
+    parser.add_argument(
+        "--mode",
+        type=str,
+        choices=["gemini", "lmstudio", "ollama"],
+        default="gemini",
+        help="Mode to run the script in: gemini, lmstudio, or ollama (default: gemini)"
+    )
+    parser.add_argument(
+        "--model_name",
+        type=str,
+        default=None,
+        help="Override the default model name for the selected mode"
+    )
+    args = parser.parse_args()
 
-model = ChatOpenAI(
-    model_name=model_name,
-    openai_api_base=openai_api_base,
-    openai_api_key=openai_api_key,
-    temperature=0 # Set temperature to 0 for deterministic output
-)
+    # Validate and load configuration
+    mode = args.mode
+    config = MODEL_CONFIGS.get(mode)
+    if not config:
+        raise ValueError(f"Invalid mode: {mode}. Choose from: {list(MODEL_CONFIGS.keys())}")
 
-# Add structured output capability
-structured_llm = model.with_structured_output(NewsSentiment)
+    # Override the model_name if provided via command line
+    if args.model_name:
+        config["model_name"] = args.model_name
 
-# Create prompt template with detailed system message
-system_prompt = """You are a senior financial analyst with expertise in news sentiment analysis. 
-When analyzing articles, follow these guidelines:
+    # Print selected configuration
+    print(f"Running in mode: {mode}")
+    print(f"Using model: {config['model_name']}")
 
-1. Identify all publicly traded companies mentioned in the text
-2. For each company, determine market sentiment based on:
-   - Explicit statements about financial performance (include exact figures/percentages)
-   - Strategic developments (mergers, partnerships, innovations)
-   - Regulatory/legal implications
-   - Market reactions (stock movements, analyst ratings)
+    # Initialize the Chat model
+    model = ChatOpenAI(
+        model_name=config['model_name'],
+        openai_api_base=config['openai_api_base'],
+        openai_api_key=config['openai_api_key'],
+        temperature=0  # Deterministic output
+    )
+    structured_llm = model.with_structured_output(NewsSentiment)
 
-For each sentiment determination:
-- Include SPECIFIC NUMERICAL DATA from the article when available (revenue figures, percentage changes, booking numbers)
-- State QUANTIFIED IMPACTS ("9% revenue growth" not just "revenue growth")
-- Mention EXACT TIME REFERENCES ("Q4 2023" not just "recently")
-- Use PRECISE METRICS from the text ($27.35 billion, 6% stock increase)
+    # Define the system prompt
+    system_prompt = """You are a senior financial analyst specializing in news sentiment analysis:
+    1. Identify all publicly traded companies in the text
+    2. For each company, determine sentiment using:
+       - Financial performance metrics (exact figures/percentages)
+       - Strategic developments (mergers, partnerships)
+       - Regulatory/legal changes
+       - Market reactions (stock moves, analyst ratings)
 
-Maintain strict requirements:
-- Confidence scores must reflect article evidence strength
-- Never invent information not explicitly stated
-- Use exact company names with ticker symbols
-- Prioritize recent information when multiple data points exist"""
+    Include specific numerical data, quantified impacts, and precise metrics.
+    Confidence scores must reflect evidence strength. Never invent information."""
 
+    # Create the prompt template
+    prompt = ChatPromptTemplate.from_messages([
+        ("system", system_prompt),
+        ("human", "Analyze this {current_date} news article:\n\n{article}")
+    ])
 
-user_prompt = """Analyze this news article dated {current_date}:
+    # Load the article content
+    try:
+        with open('content.txt', 'r', encoding='utf-8') as file:
+            article = file.read()
+    except FileNotFoundError:
+        raise FileNotFoundError("The file 'content.txt' was not found. Please ensure it exists.")
 
-{article}
-"""
+    # Prepare the input data
+    current_date = datetime.now().strftime("%Y-%m-%d")
+    input_data = {"article": article, "current_date": current_date}
 
-prompt = ChatPromptTemplate.from_messages([
-    ("system", system_prompt),
-    ("human", user_prompt)
-])
+    # Process the article and measure execution time
+    start_time = time.time()
+    with Loader("Processing article..."):
+        result = (prompt | structured_llm).invoke(input_data)
 
-# Create processing chain
-chain = prompt | structured_llm
+    # Calculate elapsed time
+    elapsed_time = time.time() - start_time
 
-with open('content.txt', 'r', encoding='utf-8') as file:
-    article = file.read()
+    # Print results
+    print(f"\nModel Used: {config['model_name']}")
+    print(f"Analysis timestamp: {result.timestamp}")
+    print(f"Time taken to process the article: {elapsed_time:.2f} seconds")
 
-# Update example usage with current date
-current_date = datetime.now().strftime("%Y-%m-%d")
-
-# Start the timer
-start_time = time.time()
-
-with Loader("Processing article..."):
-    # Replace this line with your actual code
-    result = chain.invoke({"article": article, "current_date": current_date})
-print()
-
-# Calculate the elapsed time
-elapsed_time = time.time() - start_time
-
-print(f"Model Used: {model_name}")
-print(f"Analysis timestamp: {result.timestamp}")
-print(f"Time taken to process the article: {elapsed_time:.2f} seconds")
-
-for stock in result.stocks:
-    print("**************************************************")
-    print(f"Company: {stock.company_name}")
-    print(f"Sentiment: {stock.sentiment.value}")
-    print(f"Confidence: {stock.confidence:.0%}")  # Format as percentage
-    print(f"Justification: {stock.justification}\n")
-    
+    for stock in result.stocks:
+        print("\n" + "*" * 50)
+        print(f"Company: {stock.company_name}")
+        print(f"Sentiment: {stock.sentiment.value}")
+        print(f"Confidence: {stock.confidence:.0%}")
+        print(f"Justification: {stock.justification}")
 
 
-
+if __name__ == "__main__":
+    main()

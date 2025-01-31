@@ -68,6 +68,12 @@ user_prompt =   """
 python run main.py
 ```
 
+```python
+python run main.py --mode gemini
+python main.py --mode lmstudio --model_name "bartowski/deepseek-r1-distill-qwen-14b"
+python script.py --mode ollama --model_name "deepseek-r1:14b"
+```
+
 ## Example Output
 
 ```
