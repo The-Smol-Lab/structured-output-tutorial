@@ -82,14 +82,33 @@ class NewsSentiment(BaseModel):
             raise ValueError("Stocks list cannot be empty")
         return v
 
-# model_name = "deepseek-r1-distill-qwen-32b@iq2_s"
-model_name = "gemini-2.0-flash-exp"
+# Initialize Chat model, choose the mode, between 'gemini', 'lmstudio' and 'ollama'
+mode = 'gemini'
 
-# Initialize Chat model
+if mode == 'lmstudio':
+    openai_api_base = "http://localhost:1234/v1"
+    openai_api_key = "lm-studio"
+    model_name = "mistral-small-24b-instruct-2501"
+    #bartowski/deepseek-r1-distill-qwen-14b
+    #deepseek-r1-redistill-qwen-1.5b-v1.0
+    #bartowski/deepseek-r1-distill-qwen-14b
+    #bartowski/deepseek-r1-distill-qwen-32b@iq2_s
+    #llama-3.1-tulu-3-8b
+    #selene-1-mini-llama-3.1-8b
+    #unsloth/phi-4
+elif mode == 'ollama':
+    openai_api_base = "http://localhost:11434/v1"
+    openai_api_key = "ollama"
+    model_name = "deepseek-r1:14b"
+elif mode == 'gemini':
+    openai_api_base="https://generativelanguage.googleapis.com/v1beta/openai/"
+    openai_api_key = GEMINI_API_KEY
+    model_name = "gemini-2.0-flash-exp"
+
 model = ChatOpenAI(
     model_name=model_name,
-    openai_api_base="https://generativelanguage.googleapis.com/v1beta/openai/", #lmstudio: http://localhost:1234/v1
-    openai_api_key=GEMINI_API_KEY,
+    openai_api_base=openai_api_base,
+    openai_api_key=openai_api_key,
     temperature=0 # Set temperature to 0 for deterministic output
 )
 
