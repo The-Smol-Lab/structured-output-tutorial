@@ -1,4 +1,4 @@
 openai
-langchain_openai 
+langchain-openai
 langchain 
 pydantic
