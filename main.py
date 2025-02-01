@@ -64,8 +64,11 @@ class StockSentiment(BaseModel):
             raise ValueError("Company name must be ≤ 100 characters")
         return v
 
-    @field_validator("confidence")
-    def validate_confidence(cls, v: float) -> float:
+    @field_validator("confidence", mode="before")
+    def normalize_confidence(cls, v: float) -> float:
+        # Convert percentage values to decimal
+        if isinstance(v, (int, float)) and v > 1:
+            v /= 100
         return round(v, 2)
 
     @field_validator("justification")
@@ -144,10 +147,13 @@ def main() -> None:
     system_prompt = """You are a senior financial analyst specializing in news sentiment analysis:
     1. Identify all publicly traded companies in the text
     2. For each company, determine sentiment using:
-       - Financial performance metrics (exact figures/percentages)
-       - Strategic developments (mergers, partnerships)
-       - Regulatory/legal changes
-       - Market reactions (stock moves, analyst ratings)
+    - Financial performance metrics (exact figures/percentages)
+    - Strategic developments (mergers, partnerships)
+    - Regulatory/legal changes
+    - Market reactions (stock moves, analyst ratings)
+
+    3. Provide confidence scores as decimal values between 0 and 1 (e.g., 0.85 for 85% confidence).
+    Never use percentage values for confidence scores.
 
     Include specific numerical data, quantified impacts, and precise metrics.
     Confidence scores must reflect evidence strength. Never invent information."""

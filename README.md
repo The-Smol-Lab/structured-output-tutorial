@@ -78,7 +78,7 @@ python run main.py --mode gemini
 Pass in mode and model_name to run a specific model of choice from lmstudio or ollama
 ```python
 python main.py --mode lmstudio --model_name "bartowski/deepseek-r1-distill-qwen-14b"
-python script.py --mode ollama --model_name "deepseek-r1:14b"
+python main.py --mode ollama --model_name "deepseek-r1:14b"
 ```
 
 ## Example Output
