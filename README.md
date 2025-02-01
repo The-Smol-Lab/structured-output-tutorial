@@ -4,10 +4,9 @@ In this example use case, let's build an AI system that can analyze market senti
 
 ![image](https://github.com/user-attachments/assets/590ffeaa-ecc6-4322-a44e-25f1b211e95e)
 
-https://github.com/user-attachments/assets/91868036-42bf-492f-b0e8-fe7bbf799b38
+https://github.com/user-attachments/assets/89d7a629-ed60-462e-9106-385a39759b16
 
 ## Features
-
 - **Company Identification**: Automatically detects publicly traded companies in news content
 - **Sentiment Classification**: Categorizes sentiment as Positive, Negative, or Mixed
 - **Confidence Scoring**: Provides numerical confidence levels as percentage for each analysis
