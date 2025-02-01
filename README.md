@@ -1,6 +1,6 @@
-# Structuring the Unstructured
+# Build a Stock Sentiment Analysis Program Using FREE LLMs with LangChain and Pydantic
 
-An AI system example use case for analyzing market sentiment in news articles with explanation using structured output.
+In this example use case, let's build an AI system that can analyze market sentiment based on provided news articles with explanation using structured output to help investors catch-up with the news easier.
 
 ![image](https://github.com/user-attachments/assets/590ffeaa-ecc6-4322-a44e-25f1b211e95e)
 
