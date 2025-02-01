@@ -26,11 +26,17 @@ pip install -r requirements.txt
 
 ## Configuration
 
+If you plan to use gemini model:
 1. Get a [Google Gemini API key](https://aistudio.google.com/app/apikey)
 2. Create `config.py` with:
 ```python
 GEMINI_API_KEY = "your_api_key_here"
 ```
+If you plan to use models loaded in lmstudio, please ensure proper settings as shown below:
+
+![LM Studio Set-up](supplementals/lmstudio_setup.png)
+
+Feel free to look up the LM Studio documentation for more info: https://lmstudio.ai/docs/api
 
 ## System & User Prompt
 
