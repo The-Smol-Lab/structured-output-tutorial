@@ -4,7 +4,7 @@ In this example use case, let's build an AI system that can analyze market senti
 
 ![image](https://github.com/user-attachments/assets/590ffeaa-ecc6-4322-a44e-25f1b211e95e)
 
-https://github.com/user-attachments/assets/9e84ee3d-195c-4fcc-aa5e-e635a10c3d53
+https://github.com/user-attachments/assets/91868036-42bf-492f-b0e8-fe7bbf799b38
 
 ## Features
 
