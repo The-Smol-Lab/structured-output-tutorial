@@ -4,7 +4,7 @@ In this example use case, let's build an AI system that can analyze market senti
 
 ![image](https://github.com/user-attachments/assets/590ffeaa-ecc6-4322-a44e-25f1b211e95e)
 
-https://github.com/user-attachments/assets/89d7a629-ed60-462e-9106-385a39759b16
+https://github.com/user-attachments/assets/6598e32b-6ef8-483b-ae1f-650b80982d0a
 
 ## Features
 - **Company Identification**: Automatically detects publicly traded companies in news content
