@@ -20,6 +20,7 @@ cd structured-output-tutorial
 python -m venv .llm_env
 cd .llm_env
 source bin/activate
+cd ..
 pip install -r requirements.txt
 ```
 
