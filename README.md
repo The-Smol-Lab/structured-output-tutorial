@@ -17,6 +17,9 @@ An AI system example use case for analyzing market sentiment in news articles wi
 ```bash
 git clone https://github.com/krittaprot/structured-output-tutorial.git
 cd structured-output-tutorial
+python -m venv .llm_env
+cd .llm_env
+source bin/activate
 pip install -r requirements.txt
 ```
 
