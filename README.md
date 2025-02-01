@@ -19,7 +19,7 @@ git clone https://github.com/krittaprot/structured-output-tutorial.git
 cd structured-output-tutorial
 python -m venv .llm_env
 cd .llm_env
-source Scripts/activate (for windows) or source bin/activate (for mac)
+Scripts/activate (for windows) or source bin/activate (for mac)
 cd ..
 pip install -r requirements.txt
 ```
@@ -104,3 +104,7 @@ Currently compatible with:
 ## License
 
 MIT License - See [LICENSE](LICENSE) for details
+
+## Author
+
+Maintained by [Krittaprot Tangkittikun](https://www.linkedin.com/in/krittaprot-tangkittikun-0103a9109/).
