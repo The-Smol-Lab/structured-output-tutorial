@@ -1,3 +1,5 @@
+#main.py from https://github.com/krittaprot/structured-output-tutorial
+
 import time
 from datetime import datetime
 from enum import Enum
