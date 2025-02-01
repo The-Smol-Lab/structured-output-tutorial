@@ -34,7 +34,7 @@ GEMINI_API_KEY = "your_api_key_here"
 ```
 If you plan to use models loaded in lmstudio, please ensure proper settings as shown below:
 
-
+![LM Studio Set-up](supplementals/lmstudio_setup.png)
 
 Feel free to look up the LM Studio documentation for more info: https://lmstudio.ai/docs/api
 
