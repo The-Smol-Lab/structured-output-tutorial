@@ -64,14 +64,16 @@ user_prompt =   """
 
 Run gemini model as default
 ```python
-python run main.py
+python main.py
 or
-python run main.py --mode gemini
+python main.py --mode gemini #default to "gemini-2.0-flash-exp"
+or
+python main.py --mode gemini --model_name "gemini-2.0-flash-exp"
 ```
 
 Pass in mode and model_name to run a specific model of choice from lmstudio or ollama
 ```python
-python main.py --mode lmstudio --model_name "bartowski/deepseek-r1-distill-qwen-14b"
+python main.py --mode lmstudio --model_name "deepseek-r1-distill-qwen-32b@iq2_s"
 python main.py --mode ollama --model_name "deepseek-r1:14b"
 ```
 
