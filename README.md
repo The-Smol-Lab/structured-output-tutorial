@@ -104,3 +104,7 @@ Currently compatible with:
 ## License
 
 MIT License - See [LICENSE](LICENSE) for details
+
+## Author
+
+Maintained by [Krittaprot Tangkittikun](https://www.linkedin.com/in/krittaprot-tangkittikun-0103a9109/).
