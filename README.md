@@ -80,15 +80,26 @@ python main.py --mode ollama --model_name "deepseek-r1:14b"
 ## Example Output
 
 ```
-Model Used: gemini-2.0-flash-exp
-Analysis timestamp: 2024-01-09T15:34:56.789012
-Time taken to process the article: 2.45 seconds
-
+Model Used: bartowski/deepseek-r1-distill-qwen-32b@iq2_s
+Analysis timestamp: 2025-02-01 00:00:00+00:00
+Time taken to process the article: 182.87 seconds
 **************************************************
-Company: Meta
+Company: Apple Inc.
 Sentiment: positive
 Confidence: 85%
-Justification: Recent reports highlight Meta's significant advancements and investments in artificial intelligence (AI). The company plans to invest hundreds of billions over the long term in AI infrastructure, aiming to make Meta AI accessible to over a billion users by 2025.....
+Justification: Apple reported Q1 sales of $124.3 billion, meeting views while EPS of $2.40 beat estimates by 5
+cents. Services revenue rose 13.9%, but iPhone sales declined 1%. Apple stock hit an all-time high
+in December but pulled back in January.
+
+**************************************************
+Company: Nvidia Corporation
+Sentiment: negative
+Confidence: 85%
+Justification: Nvidia dropped nearly 4% as CEO Jensen Huang met President Trump to discuss export curbs and risks
+from DeepSeek. The stock fell below its 200-day moving average after Monday's news of cheaper AI
+models.
+
+**************************************************
 ```
 
 ## Model Support
