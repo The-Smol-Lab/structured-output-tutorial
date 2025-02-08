@@ -1,100 +1,45 @@
-www.investors.com /market-trend/stock-market-today/dow-jones-sp500-nasdaq-nvidia-nvda-stock-5/
-Stock Market Today: Dow Jones Dives On Trump Tariff Order; Apple, Nvidia Break Key Levels As MicroStrategy Makes This Move (Live Coverage)
-Investor's Business Daily7-8 minutes 2/1/2025
-Page 1
-Major indexes dropped to session lows at the close Friday as looming tariffs took a toll on stocks. Meanwhile, Apple (AAPL) and Nvidia (NVDA) broke key levels, while MicroStrategy (MSTR) edged lower amid a new offering on the stock market today.
+www.usatoday.com /story/money/investing/2025/02/07/nvidia-worst-case-scenario-stock/78016524007/
+Here's the worst case scenario for Nvidia stock
+5-7 minutes 2/8/2025
+The AI industry was rocked in recent days with the release of an open source AI model from Chinese start-up DeepSeek that can compete with the best AI models from U.S. companies despite purportedly costing just $6 million to train. While it's possible the claims about costs are exaggerated or flat-out untrue, the DeepSeek model appears to be the real deal.
 
-Late Friday, the White House said President Donald Trump had ordered the implementation of aggressive tariffs on key trading partners as early as Saturday. The plan is to impose 25% tariffs on products from Mexico and Canada, and a 10% charge on goods from China. According to reports, almost 30% of all imported goods in the U.S. come from its trading neighbors.
+While cheap, powerful AI models are a great thing for companies looking to deploy AI, it's potentially terrible news for Nvidia (NASDAQ: NVDA). The bull thesis for Nvidia, which dominates the market for powerful AI accelerators that are necessary to train the most advanced AI models, relies on the assumption that each successive generation of AI models will require more and more computational horsepower to train and run.
 
-The Dow Jones Industrial Average reeled under the news and dropped 337 points for a loss of 0.8%. After some positive progress in the morning, the S&P 500 reversed direction and finished 0.5% lower. Among the S&P sectors, energy lagged the most and only two sectors, communication services and consumer discretionary gained.
+DeepSeek's breakthrough raises some serious questions. This uncertainty led to an epic plunge for Nvidia stock on Monday that wiped out hundreds of billions of dollars in market value.
 
-Also, the Nasdaq composite also gave up early robust gains and sank by 0.3% at the close. All three major indexes managed to remain above their 50-day moving averages, however.
+Another shoe still must drop
+A cheap AI model capable of trading blows with the best models from Open AI and Anthropic isn't enough on its own to scuttle Nvidia's growth story. Cheap and efficient AI models could spur more demand and ultimately drive sales of AI accelerators higher in the years ahead. Former Intel CEO Pat Gelsinger stated in a post on X that "Computing obeys the gas law. Making it dramatically cheaper will expand the market for it." Cheap AI models that don't require massive clusters of high-powered graphics processing units (GPUs) to train and run may not be a negative for Nvidia if it greatly expands the use of AI.
 
-↑ X
+However, there's another problem lurking. Nvidia's multitrillion-dollar valuation rests on one more important assumption: AI models will continue to become more capable as more computing resources are thrown at them. This was certainly true in the early days of AI, but it may not be true for much longer.
 
-0 seconds of 0 secondsVolume 0%
+More DeepSeek news:Big Tech faces heat as China's DeepSeek sows doubts on billion-dollar spending
 
-Press shift question mark to access a list of keyboard shortcuts
+AI companies have largely exhausted the data used to train AI models, and new AI models aren't leaping ahead in terms of performance anymore. The founders of Andreessen Horowitz noted late last year that improvements are slowing down, and AI models may be hitting a ceiling.
 
-What Stock Market Investors Need To Know About The PCE Report
+It's important to remember how large language models (LLMs) work. Ultimately, these models predict the next token in a stream of tokens. That's it. There's no reasoning going on, just the illusion of reasoning. While new techniques could unlock improved performance, it makes sense that there would be a limit to the capabilities of this class of AI model.
 
-05:23
+It's the combination of cheap AI models and this potential ceiling in capabilities that would be the death knell for Nvidia stock. If AI models stop improving meaningfully no matter how much computing power is thrown at them, and a top-tier model can be trained cheaply on second-rate hardware, that's the ballgame. Demand for Nvidia's expensive AI accelerators would likely fall off a cliff as the AI bubble bursts.
 
-00:00
+Even under this scenario, AI will still be a useful and potentially game-changing technology for companies that find good use cases. However, the GPU gravy train for Nvidia would come to an end, and tech giants pouring tens of billions of dollars into AI data centers would likely never recoup those investments.
 
-00:00
+A high-risk investment
+Nvidia is still valued at more than $3 trillion. The company is selling a lot of pricey data center GPUs and churning out incredible profits, but this valuation depends on two assumptions that are starting to look like they may not be true. First, that AI models will require ever-growing amounts of computing power to train and run, and second, that there is no ceiling in their capabilities.
 
-00:00
+DeepSeek's cheap AI model represents a big crack in Nvidia's growth story. It's not enough on its own to derail the AI king. However, when cheap AI models are combined with the very real prospect that AI models just aren't going to get much more capable from here, the basis for Nvidia's stratospheric market value falls apart.
 
-NOW PLAYING Stock Market Exposure: How To Make Incremental Portfolio Management Decisions
-Volume fell on the New York Stock Exchange and remained higher on the Nasdaq compared with the same time on Thursday. Breadth deteriorated rapidly with decliners engulfing advancers by around 5-to-2 on the NYSE and roughly 2-to-1 on the Nasdaq.
+I can't predict the future, and neither can you, but the uncertainty surrounding the future of the AI industry makes Nvidia an incredible risky stock.
 
-The small-cap Russell 2000 dropped 0.6% and sliced through its 50-day line. The Innovator IBD 50 (FFTY) also fell below that key level of support when it ended the day unchanged — a sharp departure from strong gains in the morning. The ETF is in a flat base with a buy point of 32.24.
+Timothy Green has positions in Intel. The Motley Fool has positions in and recommends Intel and Nvidia. The Motley Fool recommends the following options: short February 2025 $27 calls on Intel. The Motley Fool has a disclosure policy.
 
-The yield on the benchmark 10-year Treasury note rose four basis points to 4.55%.
+The Motley Fool is a USA TODAY content partner offering financial news, analysis and commentary designed to help people take control of their financial lives. Its content is produced independently of USA TODAY.
 
-Stock Market Today: A Breakout For Hims & Hers
-In stocks, Hims & Hers Health (HIMS) broke out from a cup base at 35.02. The buy zone goes as high as 36.77. And the relative strength line is at a new high, a bullish sign.
+Should you invest $1,000 in Nvidia right now?
+Offer from the Motley Fool: Before you buy stock in Nvidia, consider this:
 
-Shopify (SHOP) pulled back from a buy point of 120.72 while Gitlab (GTLB) also failed to get past an entry at 73.50. Shopify plans to report on Feb. 11. The stock holds ideal Composite and EPS Ratings of 99.
+The Motley Fool Stock Advisor analyst team just identified what they believe are the 10 best stocks for investors to buy now… and Nvidia wasn’t one of them. The 10 stocks that made the cut could produce monster returns in the coming years.
 
-Palantir Technologies (PLTR), a top holding in the IBD 50 index, gained 1.5% and eked out a new closing high Friday. The company is due to report earnings next week.
+Consider when Nvidia made this list on April 15, 2005... if you invested $1,000 at the time of our recommendation, you’d have $790,519!*
 
-Dow Jones Stocks: Nvidia, Apple Break Key Level
-Nvidia dropped nearly 4% Friday. The stock fell below its 200-day moving average again after Monday's news of DeepSeek's cheaper artificial intelligence model cast the stock back below its 50-day moving average. Nvidia's relative strength line has taken a hit while its Relative Strength Rating has fallen from 93 back to 88 in just one week.
+Stock Advisor provides investors with an easy-to-follow blueprint for success, including guidance on building a portfolio, regular updates from analysts, and two new stock picks each month. TheStock Advisorservice has more than quadrupled the return of S&P 500 since 2002*.
 
-Nvidia Chief Executive Jensen Huang met President Trump on Friday to discuss export curbs for Nvidia chips and the risk from China-based DeepSeek.
-
-Apple sank a fraction as opening gains for the tech giant disintegrated. The stock had climbed back above its 50-day moving average in higher volume earlier in the session, but was back below it to wrap up the week.
-
-Apple reported earnings late Thursday. First-quarter sales of $124.3 billion met views while earnings per share of $2.40 beat estimates by 5 cents. Sales from iPhones declined 1%, but services revenue rose 13.9%. Computer, tablet and wearables sales also increased. Apple stock hit an all-time high of 260.10 in December but pulled back in January.
-
-Bitcoin Play Switches Gears
-Among bitcoin plays, MicroStrategy reversed course and finished the day nearly 2% lower. MicroStrategy, the largest corporate bitcoin holder, priced $584 million of 8% convertible preferred stock at $80 per share vs. the original anticipated price of $100, increasing the yield to 10% as a result.
-
-Shares fell below the 50-day moving average last Friday and remain below it. The stock fell 11% last week and is headed for a 2% loss this week.
-
-3:01 p.m. ET
-Spotify Breaks Eight-Day Winning Streak
-Spotify (SPOT) edged lower, breaking an eight-day winning streak ahead of its earnings report on Tuesday. The recent IBD Stock Of The Day broke out of a cup base at 506.47 about a week ago, according to IBD MarketSurge.
-
-Spotify's Composite Rating is 98. Spotify is a holding on both IBD Leaderboard and SwingTrader.
-
-2:04 p.m. ET
-Stock Market Today: Atlassian Soars On Results
-Software firm Atlassian (TEAM) soared after its results were announced, and the stock broke out of a cup base. Sales grew 21% to $1.29 billion while earnings rose 32% to 96 cents a share. Growth in its cloud and data center segments increased.
-
-For the March quarter, the company expects sales of $1.35 billion at the midpoint. Further, the stock has a Composite Rating of 99 and its relative strength line is at a new high.
-
-11:59 a.m. ET
-Key Inflation Gauge Meets Views
-The Fed's preferred inflation gauge, the personal consumption and expenditures index, rose 0.3% from November and 2.6% on an annual basis in December, meeting views. Also, core inflation held no surprises, rising 0.2% month on month and 2.8% annually.
-
-Personal income met estimates for a 0.4% increase but expenditures rose 0.7% on a monthly basis. Economists had expected tamer spending of 0.5% in December.
-
-Federal Reserve Gov. Michelle Bowman noted during comments delivered Friday that upside risks to inflation remained in place.
-
- 10:44 a.m. ET
-Stock Market Today: Chevron Triggers Sell Signal
-Energy giant Chevron (CVX) reported results early Friday and triggered a sell signal. Sales increased 10.7% to $52.23 billion, exceeding views of $46.6 billion. But earnings fell 40% to $2.06 per share. Analysts had estimated $2.11 in earnings per share. The stock fell below the 50-day and 200-day moving averages in heavy volume.
-
-Are These Magnificent Seven Stocks A Buy Now?
-Alphabet | Amazon | Apple | Meta | Microsoft | Nvidia | Tesla
-
-Deckers (DECK) plunged and triggered a sell signal by undercutting the 50-day moving average in heavy volume. Sales and earnings growth decelerated from the prior quarter. The shoemaker also gave a 15% sales growth outlook for 2025. Shares are retreating from their all-time high while the relative strength line is also falling.
-
-Please follow VRamakrishnan on X/Twitter for more news on the stock market today.
-
-YOU MAY ALSO LIKE:
-
-Is Nvidia A Buy?
-
-IBD Live: Learn And Analyze Growth Stocks With The Pros
-
-MarketSurge: Research, Charts, Data And Coaching All In One Place
-
-The Four Pillars Of The IBD Methodology
-
-Risk Management In The Stock Market: How Much Money To Invest
-
-Trump Tariff Hikes Start, But More Coming For Market, Economy
+Learn more »
