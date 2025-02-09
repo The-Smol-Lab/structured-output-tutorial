@@ -2,3 +2,4 @@ openai
 langchain-openai
 langchain 
 pydantic
+ipykernel
