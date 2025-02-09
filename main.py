@@ -18,7 +18,7 @@ MODEL_CONFIGS = {
     'lmstudio': {
         'openai_api_base': "http://localhost:1234/v1",
         'openai_api_key': "lm-studio",
-        'model_name': "deepseek-r1-distill-qwen-32b"
+        'model_name': "cognitivecomputations_dolphin3.0-r1-mistral-24b"
     },
     'ollama': {
         'openai_api_base': "http://localhost:11434/v1",

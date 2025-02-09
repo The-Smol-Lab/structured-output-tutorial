@@ -1,5 +1,6 @@
 .llm_env
 config.py
+youtube_script.md
 superceded
 __pycache__/
 *.pyc
