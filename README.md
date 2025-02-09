@@ -16,7 +16,7 @@ https://github.com/user-attachments/assets/6598e32b-6ef8-483b-ae1f-650b80982d0a
 ## Installation
 
 ```bash
-git clone https://github.com/krittaprot/structured-output-tutorial.git
+git clone https://github.com/The-Smol-Lab/structured-output-tutorial.git
 cd structured-output-tutorial
 python -m venv .llm_env
 cd .llm_env
